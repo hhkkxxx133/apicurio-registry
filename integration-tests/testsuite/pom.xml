@@ -172,7 +172,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>4.0.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -327,6 +327,14 @@
             <properties>
                 <skipTests>false</skipTests>
                 <groups>auth</groups>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>dbupgrade</id>
+            <properties>
+                <skipTests>false</skipTests>
+                <groups>dbupgrade</groups>
             </properties>
         </profile>
 
